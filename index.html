@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+    <header class="jumbotron" id="header">
+      <h2 class="display-3">Work Day Scheduler</h2>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead mt-5"></p>
+    </header>
+
+    <!-- How it works -->
+      <div class="row mb-3">
+        <div class="col"></div>
+        <div class="col text-center">
+          <h4>How it Works:</h4>
+          <br/>
+          <p>
+            Click on the text box to add an item at a certain time. If the box is <span id="greyKey">grey</span> then the time has past.
+            If the box is <span id="redKey">red</span> that is the current time. If the box is <span id="greenKey">green</span> then that
+            time block has not yet passed.
+          </p>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <!-- Timeblocks go here -->
+      <div class="row">
+        <div id="time1" class="col-2 border text-center time">12:00 AM</div>
+        <textarea id="text1" class="content col-9 border"></textarea>
+        <button id="btn1" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time2" class="col-2 border text-center time">1:00 AM</div>
+        <textarea id="text2" class=" content col-9 border"></textarea>
+        <button id="btn2" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time3" class="col-2 border text-center time"> 2:00 AM </div>
+        <textarea id="text3" class="content col-9 border"></textarea>
+        <button id="btn3" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+          <div id="time4" class="col-2 border text-center time"> 3:00 AM </div>
+          <textarea id="text4" class="content col-9 border"></textarea>
+          <button id="btn4" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+          <div id="time5" class="col-2 border text-center time"> 4:00 AM </div>
+          <textarea id="text5" class="content col-9 border"></textarea>
+          <button id="btn5" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+          <div id="time6" class="col-2 border text-center time"> 5:00 AM </div>
+          <textarea id="text6" class="content col-9 border"></textarea>
+          <button id="btn6" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+          <div id="time7" class="col-2 border text-center time"> 6:00 AM </div>
+          <textarea id="text7" class="content col-9 border"></textarea>
+          <button id="btn7" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+          <div id="time8" class="col-2 border text-center time"> 7:00 AM </div>
+          <textarea id="text8" class="content col-9 border"></textarea>
+          <button id="btn8" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+          <div id="time9" class="col-2 border text-center time"> 8:00 AM </div>
+          <textarea id="text9" class="content col-9 border"></textarea>
+          <button id="btn9" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time10" class="col-2 border text-center time"> 9:00 AM </div>
+        <textarea id="text10" class="content col-9 border"></textarea>
+        <button id="btn10" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time11" class="col-2 border text-center time"> 10:00 AM </div>
+        <textarea id="text11" class="content col-9 border"></textarea>
+        <button id="btn11" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time12" class="col-2 border text-center time"> 11:00 AM </div>
+        <textarea id="text12" class="content col-9 border"></textarea>
+        <button id="btn12" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time13" class="col-2 border text-center time"> 12:00 PM </div>
+        <textarea id="text13" class="content col-9 border"></textarea>
+        <button id="btn13" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time14" class="col-2 border text-center time"> 1:00 PM </div>
+        <textarea id="text14" class="content col-9 border"></textarea>
+        <button id="btn14" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time15" class="col-2 border text-center time"> 2:00 PM </div>
+        <textarea id="text15" class="content col-9 border"></textarea>
+        <button id="btn15" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time16" class="col-2 border text-center time"> 3:00 PM </div>
+        <textarea id="text16" class="content col-9 border"></textarea>
+        <button id="btn16" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time17" class="col-2 border text-center time"> 4:00 PM </div>
+        <textarea id="text17" class="content col-9 border"></textarea>
+        <button id="btn17" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time18" class="col-2 border text-center time"> 5:00 PM </div>
+        <textarea id="text18" class="content col-9 border"></textarea>
+        <button id="btn18" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time19" class="col-2 border text-center time"> 6:00 PM </div>
+        <textarea id="text19" class="content col-9 border"></textarea>
+        <button id="btn19" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time20" class="col-2 border text-center time"> 7:00 PM </div>
+        <textarea id="text20" class="content col-9 border"></textarea>
+        <button id="btn20" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time21" class="col-2 border text-center time"> 8:00 PM </div>
+        <textarea id="text21" class="content col-9 border"></textarea>
+        <button id="btn21" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time22" class="col-2 border text-center time"> 9:00 PM </div>
+        <textarea id="text22" class="content col-9 border"></textarea>
+        <button id="btn22" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time23" class="col-2 border text-center time"> 10:00 PM </div>
+        <textarea id="text23" class="content col-9 border"></textarea>
+        <button id="btn23" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+      <div class="row">
+        <div id="time24" class="col-2 border text-center time"> 11:00 PM </div>
+        <textarea id="text24" class="content col-9 border"></textarea>
+        <button id="btn24" type="button" class="col-1 btn btn-info border">Save</button>
+      </div>
+    </div>
+      <!-- Scripts -->
+      <script defer src="assets/script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  </body>
+  <footer>
+    <div class="row mt-5">
+      <div class="col"></div>
+      <div class="col text-center">
+        <p>Justin Yates</p>
+      </div>
+      <div class="col"></div>
+    </div>
+  </footer>
+</html>
